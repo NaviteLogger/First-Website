@@ -1,6 +1,6 @@
 console.log("Skrypt działa!");
 
-let output = "To będzie \"tekst\" w cudzysłowie";
+let outputTekstowy = "To będzie \"tekst\" w cudzysłowie";
 
 let input = prompt("Podaj swoje imię");
 
@@ -26,3 +26,10 @@ function add(a, b)
 {
     return a + b;
 }
+
+const textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
+
+textBox.addEventListener("keydown", (event) => {
+    output.textContent = `You pressed "${event.key}".`;
+});
