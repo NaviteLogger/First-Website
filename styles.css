@@ -1,24 +1,4 @@
-* {
-    color: white;
-    background-color: black;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    font-size: 30px;
-    text-align: center;
-}
-
-p {
-    font-size: 20px;
-    text-align: center;
-}
-    /* this is a sample comment */
-li {
-    font-size: 20px;
-    padding: 10px;
-    border: 10px;
-    border-color: red;
-    border-style: solid;
-    margin: 10px;
-    text-align: left;
+.container {
+    color: blue;
+    background-color: red;
 }

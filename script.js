@@ -1,35 +1,11 @@
-console.log("Skrypt działa!");
+document.addEventListener('DOMContentLoaded', function() {
 
-let outputTekstowy = "To będzie \"tekst\" w cudzysłowie";
+const parentElement  = document.querySelector('body');
+const divElement = document.createElement('div');
+divElement.className = 'my-div';
+divElement.innerHTML = '<p>Hello, world!</p>';
+divElement.style.backgroundColor = 'red';
+divElement.style.width = '200px';
+parentElement.appendChild(divElement);
 
-let input = prompt("Podaj swoje imię");
-
-switch(input)
-{
-    case "Jan":
-        {
-            console.log("Witaj Janie!");
-        }
-        break;
-    case "Anna":
-        {
-            console.log("Witaj Anno!");
-        }
-        break;
-    default:
-        {
-            console.log("Witaj nieznajomy!");            
-        }
-}
-
-function add(a, b)
-{
-    return a + b;
-}
-
-const textBox = document.querySelector("#textBox");
-const output = document.querySelector("#output");
-
-textBox.addEventListener("keydown", (event) => {
-    output.textContent = `You pressed "${event.key}".`;
 });
